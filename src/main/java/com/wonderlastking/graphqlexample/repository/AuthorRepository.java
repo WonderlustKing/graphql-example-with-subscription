@@ -1,0 +1,7 @@
+package com.wonderlastking.graphqlexample.repository;
+
+import com.wonderlastking.graphqlexample.model.Author;
+import org.springframework.data.repository.CrudRepository;
+
+public interface AuthorRepository extends CrudRepository<Author, Long> {
+}

@@ -1,0 +1,18 @@
+type Stock {
+ id: ID!
+ numberOfStocks: Int!
+ price: Int!
+ book: Book!
+}
+
+extend type Query {
+ findAllStocks: [Stock]!
+}
+
+extend type Mutation {
+ addStock(numberOfStocks: Int!, price: Int!, book: ID!): Stock!
+}
+
+type Subscription {
+ stockQuotes: Stock!
+}
